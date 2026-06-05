@@ -103,10 +103,10 @@ export default function Footer() {
           <p className="text-sm">
             Email:{" "}
             <a
-              href="mailto:admissions@onlinemanipal.com"
+              href="mailto:admissions@onlinemuj.com"
               className="text-vibrant-orange hover:underline"
             >
-              admissions@onlinemanipal.com
+              admissions@onlinemuj.com
             </a>
           </p>
         </div>
