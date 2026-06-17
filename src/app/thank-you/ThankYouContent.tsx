@@ -28,6 +28,14 @@ export default function ThankYouContent() {
   useEffect(() => {
     const t1 = setTimeout(() => setShowCheck(true), 300);
     const t2 = setTimeout(() => setShowContent(true), 800);
+    
+    // Fire Google Ads conversion event
+    if (typeof window !== 'undefined' && (window as any).gtag) {
+      (window as any).gtag('event', 'conversion', {
+        'send_to': 'AW-18231041361/Vo0GCPvb08AcENG6nvVD'
+      });
+    }
+    
     return () => { clearTimeout(t1); clearTimeout(t2); };
   }, []);
 
